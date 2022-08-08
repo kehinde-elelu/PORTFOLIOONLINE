@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 const prismColors = {
-  bg: `#112340`,
+  bg: `white`,
   lineHighlight: `#1d2d50`,
   blue: `#5ccfe6`,
   purple: `#c3a6ff`,
@@ -93,7 +93,7 @@ const PrismStyles = css`
 
   /* Language badges */
   .gatsby-highlight pre[class*='language-']::before {
-    background: var(--lightest-navy);
+    background: var(--white);
     color: var(--white);
     font-size: var(--fz-xxs);
     font-family: var(--font-mono);

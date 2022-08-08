@@ -1,12 +1,14 @@
 ---
 date: '2018-12-29'
-title: 'Google Keep Clone'
-github: 'https://github.com/bchiang7/google-keep-vue-firebase'
-external: 'https://keep-vue.netlify.com/'
+title: 'Collision Hazards Detection for Construction Workers Safety Using Equipment Sound Data'
+github: 'https://drive.google.com/file/d/1FHtkeFrqmabkRg_g5FiDSW_rlJyvcdJo/view'
+external: 'https://drive.google.com/file/d/1FHtkeFrqmabkRg_g5FiDSW_rlJyvcdJo/view'
 tech:
-  - Vue
-  - Firebase
+  - Sound
+  - CNN
+  - MFCC
+  - Safety
 showInProjects: true
 ---
 
-A simple Google Keep clone built with Vue and Firebase.
+<!-- A simple Google Keep clone built with Vue and Firebase. -->

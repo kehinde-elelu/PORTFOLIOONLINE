@@ -1,12 +1,11 @@
 ---
 date: '2018-04-01'
-title: 'Studio Developer'
-company: 'Scout'
-location: 'Northeastern University'
-range: 'January - April 2018'
-url: 'https://web.northeastern.edu/scout/'
+title: 'Front-End Engineer'
+company: 'Habari'
+location: 'Lagos, NG'
+range: 'Febuary 2021 - August 2021'
+url: 'https://gtbank.com'
 ---
 
-- Worked with a team of three designers to build a marketing website and e-commerce platform for [blistabloc](https://blistabloc.com), an ambitious startup originating from Northeastern
-- Helped solidify a brand direction for blistabloc that spans both packaging and web
-- Interfaced with clients on a weekly basis, providing technological expertise
+- Developed a messaging and purchasing platform for a fintech that sent out over 2 million SMS and Emails every day, employing NodeJS and AWS Lambda cloud infrastructure
+- Develop a React Application that gives a dashboard of a real-time daily statistic for SMS, Email, Airtime, and Bundle purchase
