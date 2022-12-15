@@ -347,7 +347,7 @@ const Featured = () => {
 
   return (
     <section id="projects">
-      <h2 className="numbered-heading" ref={revealTitle}>
+      <h2 className="numbered-heading" ref={revealTitle} style={{ color: 'black' }}>
         Some Things I’ve Built
       </h2>
 
@@ -362,13 +362,16 @@ const Featured = () => {
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline" style={{ color: 'black' }}>
+                      Featured Project
+                    </p>
 
-                    <h3 className="project-title">
+                    <h3 style={{ color: 'black' }} className="project-title">
                       <a href={external}>{title}</a>
                     </h3>
 
                     <div
+                      style={{ color: 'black' }}
                       className="project-description"
                       dangerouslySetInnerHTML={{ __html: html }}
                     />
@@ -376,7 +379,9 @@ const Featured = () => {
                     {tech.length && (
                       <ul className="project-tech-list">
                         {tech.map((tech, i) => (
-                          <li key={i}>{tech}</li>
+                          <li style={{ color: 'black' }} key={i}>
+                            {tech}
+                          </li>
                         ))}
                       </ul>
                     )}

@@ -18,7 +18,7 @@ const StyledHeroSection = styled.section`
 
   h1 {
     margin: 0 0 30px 4px;
-    color: var(--green);
+    color: black;
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
@@ -28,20 +28,31 @@ const StyledHeroSection = styled.section`
     }
   }
 
+  h2 {
+    color: rgb(84, 84, 84);
+  }
+
   h3 {
     margin-top: 10px;
-    color: var(--slate);
+    color: rgb(136, 146, 176);
     line-height: 0.9;
+    font-weight: 450;
   }
 
   p {
     margin: 20px 0 0;
     max-width: 540px;
+    color: black;
+  }
+
+  a {
+    color: rgb(253, 79, 24);
   }
 
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    color: black;
   }
 `;
 

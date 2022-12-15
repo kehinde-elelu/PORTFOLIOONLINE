@@ -10,6 +10,18 @@ import { usePrefersReducedMotion } from '@hooks';
 const StyledJobsSection = styled.section`
   max-width: 700px;
 
+  h2 {
+    color: black;
+  }
+
+  h3 {
+    color: black;
+  }
+
+  div {
+    color: black;
+  }
+
   .inner {
     display: flex;
 
@@ -262,7 +274,7 @@ const Jobs = () => {
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
                   aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
+                  <span style={{ color: 'black' }}>{company}</span>
                 </StyledTabButton>
               );
             })}
@@ -286,9 +298,9 @@ const Jobs = () => {
                     hidden={activeTabId !== i}>
                     <h3>
                       <span>{title}</span>
-                      <span className="company">
+                      <span className="company" style={{ color: 'rgb(253,79,24)' }}>
                         &nbsp;@&nbsp;
-                        <a href={url} className="inline-link">
+                        <a href={url} className="inline-link" style={{ color: 'black' }}>
                           {company}
                         </a>
                       </span>

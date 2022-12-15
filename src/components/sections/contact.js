@@ -16,7 +16,7 @@ const StyledContactSection = styled.section`
   .overline {
     display: block;
     margin-bottom: 20px;
-    color: var(--green);
+    color: black;
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     font-weight: 400;
@@ -24,20 +24,25 @@ const StyledContactSection = styled.section`
     &:before {
       bottom: 0;
       font-size: var(--fz-sm);
+      color: black;
     }
 
     &:after {
       display: none;
+      color: black;
     }
   }
 
   .title {
     font-size: clamp(40px, 5vw, 60px);
+    color: black;
   }
 
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
+    ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    color: black;
   }
 `;
 
@@ -59,7 +64,7 @@ const Contact = () => {
 
       <h2 className="title">Get In Touch</h2>
 
-      <p>
+      <p style={{ color: 'black' }}>
         If you would like to collaborate on any project or have a question click the button below
         and ~let's make the world a better place to live!
       </p>

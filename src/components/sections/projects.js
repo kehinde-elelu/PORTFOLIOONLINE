@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import React, { useEffect, useRef } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -31,6 +31,7 @@ const StyledProjectsSection = styled.section`
     grid-gap: 15px;
     position: relative;
     margin-top: 50px;
+    color: black;
 
     @media (max-width: 1080px) {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -78,9 +79,10 @@ const StyledProject = styled.li`
   .project-top {
     ${({ theme }) => theme.mixins.flexBetween};
     margin-bottom: 35px;
+    color: black;
 
     .folder {
-      color: var(--green);
+      color: black;
       svg {
         width: 40px;
         height: 40px;
@@ -91,7 +93,7 @@ const StyledProject = styled.li`
       display: flex;
       align-items: center;
       margin-right: -10px;
-      color: var(--light-slate);
+      color: black;
 
       a {
         ${({ theme }) => theme.mixins.flexCenter};
@@ -115,7 +117,7 @@ const StyledProject = styled.li`
 
   .project-title {
     margin: 0 0 10px;
-    color: var(--lightest-slate);
+    color: black;
     font-size: var(--fz-xxl);
 
     a {
@@ -135,8 +137,8 @@ const StyledProject = styled.li`
   }
 
   .project-description {
-    color: var(--light-slate);
     font-size: 17px;
+    color: black;
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
@@ -151,6 +153,7 @@ const StyledProject = styled.li`
     padding: 0;
     margin: 20px 0 0 0;
     list-style: none;
+    color: black;
 
     li {
       font-family: var(--font-mono);
@@ -189,7 +192,7 @@ const Projects = () => {
     }
   `);
 
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
@@ -208,11 +211,12 @@ const Projects = () => {
   const GRID_LIMIT = 6;
   const projects = data.projects.edges.filter(({ node }) => node);
   const firstSix = projects.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? projects : firstSix;
+  // const projectsToShow = showMore ? projects : firstSix;
+  const projectsToShow = firstSix;
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { external, title, tech } = frontmatter;
 
     return (
       <div className="project-inner">
@@ -222,11 +226,11 @@ const Projects = () => {
               <Icon name="Folder" />
             </div>
             <div className="project-links">
-              {github && (
+              {/* {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
                 </a>
-              )}
+              )} */}
               {external && (
                 <a
                   href={external}
@@ -264,11 +268,13 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Publications and Posters</h2>
+      <h2 style={{ color: 'black' }} ref={revealTitle}>
+        Publications and Posters
+      </h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      {/* <Link style={{color:"black"}} className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive
-      </Link>
+      </Link> */}
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (
@@ -301,9 +307,9 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      {/* <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
-      </button>
+      </button> */}
     </StyledProjectsSection>
   );
 };

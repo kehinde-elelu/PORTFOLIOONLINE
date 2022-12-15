@@ -1,13 +1,11 @@
 ---
 date: '2019-11-12'
-title: 'Intelligent Hearing Protection for Construction Workers Exposed to Hazardous Noise'
-github: 'https://www.cpwr.com/wp-content/uploads/SS2022-intelligent-hearing-protection.pdf'
-external: 'https://www.cpwr.com/wp-content/uploads/SS2022-intelligent-hearing-protection.pdf'
+title: 'Augmented Hearing of Auditory Safety Cues for Construction Workers: A Systematic Literature Review'
+# github: 'https://www.mdpi.com/article/10.3390/s22239135'
+external: 'https://www.mdpi.com/article/10.3390/s22239135'
 tech:
-  - Sound
-  - CNN
-  - MFCC
-  - Safety
+  - Auditory signal processing
+  - Auditory situational awareness
 company: 'Upstatement'
 showInProjects: true
 ---

@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: #f9f9f9;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -66,7 +66,7 @@ const StyledNav = styled.nav`
     ${({ theme }) => theme.mixins.flexCenter};
 
     a {
-      color: var(--green);
+      color: #020202;
       width: 42px;
       height: 42px;
 
@@ -81,6 +81,7 @@ const StyledNav = styled.nav`
         fill: none;
         transition: var(--transition);
         user-select: none;
+        color: #020202;
       }
     }
   }
@@ -104,7 +105,9 @@ const StyledLinks = styled.div`
       margin: 0 5px;
       position: relative;
       counter-increment: item 1;
-      font-size: var(--fz-xs);
+      font-size: 0.875rem;
+      color: #020202;
+      font-weight: 700;
 
       a {
         padding: 10px;
@@ -112,8 +115,9 @@ const StyledLinks = styled.div`
         &:before {
           content: '0' counter(item) '.';
           margin-right: 5px;
-          color: var(--green);
-          font-size: var(--fz-xxs);
+          color: #020202;
+          font-size: 0.875rem;
+          font-weight: 700;
           text-align: right;
         }
       }
@@ -124,6 +128,9 @@ const StyledLinks = styled.div`
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
+    color: #020202;
+    font-size: 0.875rem;
+    font-weight: 700;
   }
 `;
 

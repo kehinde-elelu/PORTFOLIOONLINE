@@ -4,7 +4,7 @@ title: 'Study of optimum compressive strength of palm kernel shell-quarry dust a
 github: 'https://www.researchgate.net/publication/340889585_Study_of_optimum_compressive_strength_of_palm_kernel_shell-quarry_dust_aggregates_concrete'
 external: 'https://www.researchgate.net/publication/340889585_Study_of_optimum_compressive_strength_of_palm_kernel_shell-quarry_dust_aggregates_concrete'
 tech:
-  - Strength
+  - Concrete
 showInProjects: true
 ---
 

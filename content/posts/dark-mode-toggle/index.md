@@ -60,12 +60,12 @@ Dark mode toggle without the flash of default theme. Important bits:
 
 ```css
 :root {
-  --bg: white;
+  --bg: #ffffff;
   --text: #000000;
 }
 
 [data-theme='dark'] {
-  --bg: white;
+  --bg: #ffffff;
   --text: #ffffff;
 }
 ```

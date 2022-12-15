@@ -40,9 +40,9 @@ module.exports = {
   ],
 
   colors: {
-    green: 'white',
-    navy: 'white',
-    darkNavy: 'white',
+    green: '#F9F9F9',
+    navy: '#F9F9F9',
+    darkNavy: '#F9F9F9',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({
